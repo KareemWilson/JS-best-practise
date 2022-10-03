@@ -7,13 +7,6 @@ const toggleDisplay = (elemGroup1, elemGroup2) => {
   });
 };
 
-const createTask = (task, index) => {
-  const id = index;
-  return {
-    description: task,
-    completed: false,
-    id,
-  };
-};
+const createTask = (task, id) => ({ description: task, completed: false, id });
 
 export { toggleDisplay, createTask };
